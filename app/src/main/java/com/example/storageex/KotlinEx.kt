@@ -5,7 +5,9 @@ package com.example.storageex
  */
 fun main(){
 
-    println("max number is:"+getMaxNumber(105,1,2,3,4,5,6,7,8,9,10,15,25,35))
+    var arrayList= intArrayOf(106,107,108)
+    println("max number is:"+getMaxNumber(105,1,2,3,4,5,6,7,8,9,10,15,25,*arrayList))
+    println("max number is:"+getMaxNumber(*arrayList))
 }
 
 private fun getMaxNumber(vararg number: Int):Int{
